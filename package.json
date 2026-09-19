@@ -1,0 +1,23 @@
+{
+  "name": "@bitnormous/business-sdk-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Accept crypto payments on your website with a few lines of code.",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc -b packages/core packages/node packages/sdk packages/react",
+    "test": "node --test packages/core/test/*.test.mjs packages/node/test/*.test.mjs",
+    "clean": "rm -rf packages/*/dist packages/*/*.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "typescript": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

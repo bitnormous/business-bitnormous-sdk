@@ -1,0 +1,34 @@
+{
+  "name": "@bitnormous/business-react",
+  "version": "1.0.0",
+  "description": "React hooks and components for Bitnormous Business crypto checkouts.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@bitnormous/business-core": "1.0.0",
+    "@bitnormous/business-sdk": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "react": "^19.2.6"
+  },
+  "keywords": ["bitnormous", "react", "crypto", "payments", "checkout", "hooks"],
+  "publishConfig": { "access": "public" }
+}

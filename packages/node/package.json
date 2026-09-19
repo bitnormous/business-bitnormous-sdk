@@ -1,0 +1,27 @@
+{
+  "name": "@bitnormous/business-node",
+  "version": "1.0.0",
+  "description": "Server-side Bitnormous Business SDK: create checkout sessions and verify webhooks from Node.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@bitnormous/business-core": "1.0.0"
+  },
+  "keywords": ["bitnormous", "crypto", "payments", "webhooks", "node", "stablecoin"],
+  "engines": { "node": ">=18" },
+  "publishConfig": { "access": "public" }
+}

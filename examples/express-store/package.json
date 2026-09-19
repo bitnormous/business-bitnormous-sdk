@@ -1,0 +1,13 @@
+{
+  "name": "bitnormous-example-express-store",
+  "private": true,
+  "type": "module",
+  "description": "A minimal store showing the full Bitnormous integration: create, pay, fulfil.",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@bitnormous/business-node": "file:../../packages/node",
+    "express": "^5.1.0"
+  }
+}
